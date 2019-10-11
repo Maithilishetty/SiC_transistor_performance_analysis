@@ -15,6 +15,8 @@ global Tstd
 global Vgs Vth Vds
 global a k 
 global alpha beta lambda
+global Cox
+global L 
 
 % ----------------------------------------------------------------------- %
 %                           Variables Declaration
@@ -25,11 +27,12 @@ global alpha beta lambda
 Tstd = 25; %degree Celsius
 
 % Vgs
-% Vth
+Vth = 3.5; %Min = 2V
 % Vds
-
+Idstd = 20;
 alpha = -0.007;
-
+Cox = 2.56 * 10^-9;
+L =  0.96 * 10^-6;
 
 % ----------------------------------------------------------------------- %
 %                             Function Callbacks
