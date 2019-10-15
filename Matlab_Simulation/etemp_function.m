@@ -5,7 +5,6 @@
 
 function etemp = etemp_function(etemp_input)
     global Tstd alpha
-    T = etemp_input;
-    
+    T = etemp_input;   
     etemp = (T - Tstd) * alpha;
 end  

@@ -1,15 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% File name: grapher
+% File name: core_function.m
 % Authors: Karthik K Bhat, Anoop Narayana, Maithili Shetty 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % ----------------------------------------------------------------------- %
 
 function core = core_funtion(core_inputs)
-
-Vgs = core_inputs(1);
-Vds = core_inputs(2);
-
+    Vgs = core_inputs(1);
+    Vds = core_inputs(2);
     if (Vgs < Vth)
         Id = 0;
     elseif ((Vds > 0) && (Vds < ((Vgs - Vth)/(1+a))))

@@ -12,12 +12,10 @@ close all;
 % ----------------------------------------------------------------------- %
 global Idstd 
 global Tstd
-global Vgs Vth Vds
+global Vgs Vth Vds T
 global a k 
-global alpha beta lambda
-global Cox
-global L 
-
+global K_ftemp
+global alpha lambda
 % ----------------------------------------------------------------------- %
 %                           Variables Declaration
 % ----------------------------------------------------------------------- %
@@ -25,17 +23,15 @@ global L
 % Idstd declared in ftemp_function
 
 Tstd = 25; %degree Celsius
-
-% Vgs
-Vth = 3.5; %Min = 2V
-% Vds
-Idstd = 20;
+a = 1.5; %Varies from 1 to 2
+Vth = 2.1; %Min = 2V
+Idstd = 90;
 alpha = -0.007;
-Cox = 2.56 * 10^-9;
-L =  0.96 * 10^-6;
-
+k = 0.156; %Vgs = 20V and Ids = 50A
+K_ftemp = 1.11;
+lambda = 0.05; %From paper Improved_MATLAB_Something
 % ----------------------------------------------------------------------- %
 %                             Function Callbacks
 % ----------------------------------------------------------------------- %
-sim('Mosfet_v0')
+%sim('Mosfet_v0')
 %grapher
