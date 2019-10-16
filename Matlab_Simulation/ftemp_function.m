@@ -4,6 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function ftemp = ftemp_function(ftemp_input)    
-    T = ftemp_inputs(1);
+    global Idstd Tstd K_temp
+    T = ftemp_input;
     ftemp = Idstd*(((Tstd/T)^K_temp));
 end  

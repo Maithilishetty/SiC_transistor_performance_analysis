@@ -33,5 +33,5 @@ lambda = 0.05; %From paper Improved_MATLAB_Something
 % ----------------------------------------------------------------------- %
 %                             Function Callbacks
 % ----------------------------------------------------------------------- %
-%sim('Mosfet_v0')
+sim('SiC_Mosfet_model_2018a')
 %grapher

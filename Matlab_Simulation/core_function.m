@@ -5,7 +5,9 @@
 
 % ----------------------------------------------------------------------- %
 
-function core = core_funtion(core_inputs)
+function core = core_function(core_inputs)
+    global Vth a k lambda
+    
     Vgs = core_inputs(1);
     Vds = core_inputs(2);
     if (Vgs < Vth)
